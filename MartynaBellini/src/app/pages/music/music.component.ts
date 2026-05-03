@@ -1,12 +1,11 @@
 import { Component } from '@angular/core';
 import { NgFor } from '@angular/common';
-import { RouterLink } from '@angular/router';
 
 @Component({
   selector: 'app-music',
   templateUrl: './music.component.html',
   styleUrls: ['./music.component.css'],
-  imports: [NgFor, RouterLink],
+  imports: [NgFor],
   standalone: true
 })
 export class MusicComponent {
