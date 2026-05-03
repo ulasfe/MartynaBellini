@@ -1,0 +1,29 @@
+<div class="menu" *ngIf="!gameStarted && !gameEnded && !playerSelected">
+  <h2>Wyścig Ibo </h2>
+  <p>Wybrany gracz:</p>
+  <button (click)="selectPlayer('Ibo')">Ibo</button>
+</div>
+
+<div class="menu" *ngIf="playerSelected && !gameStarted && !gameEnded">
+  <h2> Wyścig Ibo </h2>
+  <p>Wybrany gracz: {{ selectedPlayer }}</p>
+  <p>Wybierz poziom trudności</p>
+  <button (click)="startGame('easy')">Łatwy</button>
+  <button (click)="startGame('normal')">Normal</button>
+  <button (click)="startGame('hard')">Trudny</button>
+</div>
+
+<canvas
+  #canvas
+  *ngIf="gameStarted"
+  width="800"
+  height="300"
+  class="game-canvas"
+  (click)="jump()"
+></canvas>
+
+<div class="end" *ngIf="gameEnded">
+  <h2>Oyun Bitti 💘</h2>
+  <p> {{selectedPlayer}}: Dystans, który przebiegłeś  {{ distance | number: '1.0-0' }} metr 🥵</p>
+  <button (click)="restartGame()">Zagraj ponownie</button>
+</div>

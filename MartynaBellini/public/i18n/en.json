@@ -1,0 +1,47 @@
+{
+  "NAVBAR": {
+    "FOOD": "Food",
+    "DRINKS": "Drinks",
+    "CONTACTUS": "Contact Us",
+    "ABOUTUS": "Our Story",
+    "MENU": "MENU"
+  },
+  "HOME": {
+    "WELCOME": "Welcome to Ibo Falafel!",
+    "SUBTITLE": "The best falafel in town, made with love."
+  },
+  "FOOD": {
+	  "SUBTITLES": {"WRAPS" : "WRAPS", "GRABABITE": "GRAB A BITE", "SALADS": "SALADS","EXTRAS" : "EXTRAS","LMTD": "LIMITED EDITIONS"},
+    "WRAPS": {
+      "EGYPTIAN": { "TITLE": "EGYPTIAN STYLE WRAP", "DESC": "3x falafel, hummus, iceberg lettuce, pickled white icicle and beetroot, fresh mint, mint-basil sauce", "PRICE": "34.00" },
+      "GREEK": { "TITLE": "GREEK WRAP", "DESC": "3x falafel, hummus, vegan feta cheese, fresh cucumber, tomato, mix lettuce, red onion, green pepper, black olive, corn, herbal sauce", "PRICE": "35.50" },
+      "SOYSTRIPS": { "TITLE": "SOY STRIPS WRAP", "DESC": "Soy strips, hummus, arugula, frillice lettuce, tomato, fresh cucumber, spicy-garlic sauce", "PRICE": "34.50" },
+      "MUSTARTD": { "TITLE": "MUSTARD WRAP", "DESC": "3x falafel, hummus, mix lettuce, tomato, fresh cucumber, grilled paprika, red cabbage & carrot coleslaw, roasty in mustard-agave sauce", "PRICE": "34.00" },
+      "KIMCHI": { "TITLE": "KIMCHI WRAP", "DESC": "3x falafel, homemade kimchi, hummus, frisée lettuce, spinach, lamb's lettuce, fresh cucumber, herb sauce", "PRICE": "34.00" },
+      "AVOCADO": { "TITLE": "AVOCADO WRAP", "DESC": "3x falafel, avocado, classic hummus, arugula, lamb's lettuce, frisée lettuce, radicchio, tomato, fresh cucumber, spicy mango sauce", "PRICE": "36.00" },
+      "SEITAN": { "TITLE": "SEITAN WRAP", "DESC": "Homemade seitan, hummus, arugula, red cabbage, onion, mix lettuce, tomato, fresh cucumber, peanut sauce", "PRICE": "36.50" },
+      "VEGE": { "TITLE": "VEGE KEBAB", "DESC": "Soy strips, hummus, iceberg lettuce, onion with parsley, tomato, pickled cucumber, red cabbage and carrot coleslaw, garlic sauce", "PRICE": "35.00" }
+    },
+    "GRABABITE": {
+      "FRENCHFRIES": { "TITLE": "FRENCH FRIES", "DESC": "", "PRICE": "14.00" },
+      "KIMCHI": { "TITLE": "KIMCHI", "DESC": "", "PRICE": "13.00" },
+      "TURKISHPICKLES": { "TITLE": "TURKISH PICKLES", "DESC": "", "PRICE": "14.00" },
+      "HUMMUS": { "TITLE": "HUMMUS", "DESC": "Served with crispy and aromatic bread", "PRICE": "32.00" }
+    },
+    "SALADS": {
+      "FALAFEL": { "TITLE": "FALAFEL ON THE PLATE", "DESC": "4x falafel, hummus, frillice lettuce, lambs lettuce, spinach, arugula, kimchi, sprouts, carrot, fresh cucumber, tomato, pickled vegetables, pepperoni peppers, pomegranate seeds mix sauces", "PRICE": "49.00" },
+      "SALADWITH": { "TITLE": "SALAD WITH FALAFEL", "DESC": "3x falafel, lambs lettuce, spinach, fresh cucumber, cherry tomatoes, red paprika, hummus, sesame", "PRICE": "36.00" }
+    },
+    "LIMITED": {
+      "ROLLON": { "TITLE": "FRENCH FRIES ROLL", "DESC": "Soy strips, french fries, hummus, tomato, red onion, pickled cucumber, garlic sauce", "PRICE": "35.50" }
+    },
+    "EXTRAS": {
+      "FALAFEL": { "TITLE": "FALAFEL (1 PCS.)", "DESC": "", "PRICE": "4.00" },
+      "VEGANFETA": { "TITLE": "VEGAN FETA CHEESE", "DESC": "", "PRICE": "4.00" },
+      "JALAPENO": { "TITLE": "JALAPENO PEPPER", "DESC": "", "PRICE": "3.00" },
+      "OLIVES": { "TITLE": "OLIVES", "DESC": "", "PRICE": "3.00" },
+      "CORN": { "TITLE": "CORN", "DESC": "", "PRICE": "3.00" },
+      "SAUCE": { "TITLE": "ADDITIONAL SAUCE", "DESC": "", "PRICE": "3.00" }
+    }
+  }
+}

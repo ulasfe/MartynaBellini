@@ -1,0 +1,13 @@
+<div class="slider">
+
+  <div
+    class="slide"
+    *ngIf="slides[currentIndex] as slide"
+    [@slideAnimation]
+    (click)="goTo(slide.route)"
+  >
+    <img [src]="slide.image" />
+    <div class="caption">{{ slide.title }}</div>
+  </div>
+
+</div>

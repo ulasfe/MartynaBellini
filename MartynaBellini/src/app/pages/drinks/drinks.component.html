@@ -1,0 +1,37 @@
+<div class="menu-container p-8 bg-[#F9F8F3] min-h-screen text-[#006400]">
+  <div class="flex flex-col md:flex-row gap-12 max-w-6xl mx-auto">
+    
+    <div class="flex flex-col items-center justify-center">
+      <h1 class="text-9xl font-black vertical-text opacity-100" >MENU</h1>
+      <div class="mt-9">
+        <img src="../foodLogo.png" alt="Ibo Falafel" style="width: 25rem;">
+      </div>
+    </div>
+
+    <div class="flex-1 grid grid-cols-1 md:grid-cols-2 gap-x-12">
+      
+      <section>
+        <h2 class="text-3xl font-bold border-b-2 border-[#006400] text-center mb-6 py-2">COLD DRINKS</h2>
+        <div *ngFor="let item of coldDrinks" class="mb-6">
+          <div class="flex justify-between font-bold text-xl">
+            <span>{{ item.name }}</span>
+            <span>{{ item.price | number:'1.2-2' }}</span>
+          </div>
+          <p class="text-sm italic leading-tight text-green-800">{{ item.description }}</p>
+        </div>
+      </section>
+
+      <section>
+        <h2 class="text-3xl font-bold border-b-2 border-[#006400] text-center mb-6 py-2">HOT DRINKS</h2>
+        <div *ngFor="let item of hotDrinks" class="mb-6">
+          <div class="flex justify-between font-bold text-xl">
+            <span>{{ item.name }}</span>
+            <span>{{ item.price | number:'1.2-2' }}</span>
+          </div>
+          <p class="text-sm italic leading-tight text-green-800">{{ item.description }}</p>
+        </div> 
+      </section>
+
+    </div>
+  </div>
+</div>

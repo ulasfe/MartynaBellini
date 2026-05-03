@@ -1,0 +1,24 @@
+<nav class="navbar">
+  <div class="nav-inner">
+    <a routerLink="" class="nav-logo">Martyna Bellini</a>
+    <div class="nav-links">
+      <a routerLink="" routerLinkActive="active" [routerLinkActiveOptions]="{exact:true}">Home</a>
+      <a routerLink="music" routerLinkActive="active">Music</a>
+      <a routerLink="about" routerLinkActive="active">About</a>
+      <a routerLink="contact" routerLinkActive="active">Contact</a>
+    </div>
+    <button class="hamburger" (click)="menuOpen = !menuOpen">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+  <div class="mobile-menu" [class.open]="menuOpen">
+    <a routerLink="" (click)="menuOpen=false">Home</a>
+    <a routerLink="music" (click)="menuOpen=false">Music</a>
+    <a routerLink="about" (click)="menuOpen=false">About</a>
+    <a routerLink="contact" (click)="menuOpen=false">Contact</a>
+  </div>
+</nav>
+
+<main class="page-content">
+  <router-outlet></router-outlet>
+</main>

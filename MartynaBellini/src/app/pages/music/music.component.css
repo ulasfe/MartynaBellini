@@ -1,0 +1,74 @@
+.music-page { min-height: 100vh; background: #fdf6ee; }
+.page-header {
+  background: linear-gradient(160deg, #f5e9d8, #ede0c8);
+  padding: 80px 48px 60px;
+  max-width: 1100px;
+  margin: 0 auto;
+}
+.page-header h1 {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 56px;
+  font-weight: 300;
+  color: #3a2c1a;
+  margin: 12px 0 16px;
+}
+.page-sub { font-size: 15px; color: #7a5c3a; font-weight: 300; max-width: 480px; }
+.page-body { max-width: 1100px; margin: 0 auto; padding: 48px; }
+.filter-row { display: flex; gap: 10px; margin-bottom: 32px; flex-wrap: wrap; }
+.filter-btn {
+  font-family: 'Jost', sans-serif;
+  font-size: 12px;
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+  padding: 8px 20px;
+  border-radius: 20px;
+  border: 1px solid #d4b896;
+  background: transparent;
+  color: #a0693a;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+.filter-btn.active, .filter-btn:hover { background: #6b3d1e; color: #fdf6ee; border-color: #6b3d1e; }
+.tracks-list { border-top: 0.5px solid #d4b896; }
+.track-row {
+  display: flex;
+  align-items: center;
+  padding: 20px 0;
+  border-bottom: 0.5px solid #d4b896;
+  gap: 24px;
+  transition: background 0.15s;
+}
+.track-row:hover { background: rgba(212,184,150,0.1); }
+.track-num { font-family: 'Cormorant Garamond', serif; font-size: 14px; color: #a0693a; width: 28px; flex-shrink: 0; }
+.track-meta { flex: 1; }
+.track-name { font-family: 'Cormorant Garamond', serif; font-size: 24px; font-weight: 400; color: #3a2c1a; margin: 0 0 3px; }
+.track-desc { font-size: 13px; color: #a0693a; font-weight: 300; }
+.track-duration { font-size: 13px; color: #a0693a; min-width: 40px; }
+.platform-links { display: flex; gap: 10px; }
+.platform-btn {
+  font-family: 'Jost', sans-serif;
+  font-size: 12px;
+  padding: 7px 14px;
+  border-radius: 4px;
+  text-decoration: none;
+  font-weight: 400;
+  letter-spacing: 0.5px;
+  transition: opacity 0.2s;
+}
+.platform-btn:hover { opacity: 0.8; }
+.platform-btn.yt { background: #c0392b; color: white; }
+.platform-btn.sp { background: #1db954; color: white; }
+
+.site-footer { background: #3a2c1a; padding: 48px; text-align: center; display: flex; flex-direction: column; align-items: center; gap: 16px; }
+.footer-name { font-family: 'Cormorant Garamond', serif; font-size: 24px; font-weight: 300; color: #d4b896; letter-spacing: 2px; }
+.footer-links { display: flex; gap: 24px; }
+.footer-links a { color: #a0693a; font-size: 20px; text-decoration: none; transition: color 0.2s; }
+.footer-links a:hover { color: #d4b896; }
+.footer-copy { font-size: 11px; color: #7a5c3a; letter-spacing: 1px; }
+
+@media (max-width: 768px) {
+  .page-header { padding: 48px 24px 40px; }
+  .page-body { padding: 32px 24px; }
+  .platform-links { flex-direction: column; }
+  .track-duration { display: none; }
+}

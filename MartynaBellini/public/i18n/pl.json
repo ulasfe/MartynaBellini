@@ -1,0 +1,53 @@
+{
+  "NAVBAR": {
+    "FOOD": "Jedzenie",
+    "DRINKS": "Napoje",
+    "CONTACTUS": "Kontakt",
+    "ABOUTUS": "Nasza historia",
+    "MENU": "MENU"
+  },
+  "HOME": {
+    "WELCOME": "Witaj w Ibo Falafel!",
+    "SUBTITLE": "Najlepszy falafel w mieście, robiony z miłością."
+  },
+  "FOOD": {
+    "SUBTITLES": {
+      "WRAPS": "WRAPY",
+      "GRABABITE": "NA SZYBKO",
+      "SALADS": "SAŁATKI",
+      "EXTRAS": "DODATKI",
+      "LMTD": "EDYCJE LIMITOWANE"
+    },
+    "WRAPS": {
+      "EGYPTIAN": { "TITLE": "WRAP PO EGIPSKU", "DESC": "3x falafel, hummus, sałata lodowa,biała marynowana rzodkiew i burak, świeża mięta, sos miętowo-bazyliowy", "PRICE": "34.00" },
+      "GREEK": { "TITLE": "WRAP GRECKI", "DESC": "3x falafel, hummus, wegańska feta, świeży ogórek, pomidor, mix sałat, czerwona cebula, papryka, czarne oliwki, kukurydza, sos ziołowy", "PRICE": "35.50" },
+      "SOYSTRIPS": { "TITLE": "WRAP Z SOJOWYMI STRIPSAMI", "DESC": "Sojowe stripsy, hummus, rukola, sałata frillice, pomidor, świeży ogórek, sos ostro-czosnkowy", "PRICE": "34.50" },
+      "MUSTARTD": { "TITLE": "WRAP MUSZTARDOWY", "DESC": "3x falafel, hummus, mix sałat, pomidor, świeży ogórek, grillowana papryka, surówka z czerwonej kapusty i marchewki, pieczone w sosie musztardowo-agawowym", "PRICE": "34.00" },
+      "KIMCHI": { "TITLE": "KIMCHI WRAP", "DESC": "3x falafel, domowe kimchi, hummus, sałata fryzyjska, szpinak, roszponka, świeży ogórek, sos ziołowy", "PRICE": "34.00" },
+      "AVOCADO": { "TITLE": "AVOCADO WRAP", "DESC": "3x falafel, awokado, hummus klasyczny, rukola, roszponka, sałata fryzyjska, sałata radicchio, pomidor, świeży ogórek, ostry sos mango", "PRICE": "36.00" },
+      "SEITAN": { "TITLE": "SEITAN WRAP", "DESC": "Domowy seitan, hummus, rukola, czerwona kapusta, cebula, mix sałat, pomidor, świeży ogórek, sos orzechowy", "PRICE": "36.50" },
+      "VEGE": { "TITLE": "VEGE KEBAB", "DESC": "Sojowe stripsy, hummus, sałata lodowa, cebula z pietruszką, pomidor, ogórek kiszony, surówka z czerwonej kapusty i marchewki, sos czosnkowy", "PRICE": "35.00" }
+    },
+    "GRABABITE": {
+      "FRENCHFRIES": { "TITLE": "FRYTKI", "DESC": "", "PRICE": "14.00" },
+      "KIMCHI": { "TITLE": "KIMCHI", "DESC": "", "PRICE": "13.00" },
+      "TURKISHPICKLES": { "TITLE": "TURECKIE PIKLE", "DESC": "", "PRICE": "14.00" },
+      "HUMMUS": { "TITLE": "HUMMUS", "DESC": "Serwowany z chrupiącym i aromatycznym pieczywem", "PRICE": "32.00" }
+    },
+    "SALADS": {
+      "FALAFEL": { "TITLE": "FALAFEL NA TALERZU", "DESC": "4x falafel, hummus, sałata frillice, roszponka, szpinak, rukola, kimchi, kiełki, marchewka, świeży ogórek, pomidor, marynowane warzywa, papryczki pepperoni, ziarna granatu, mix sosów", "PRICE": "49.00" },
+      "SALADWITH": { "TITLE": "SAŁATKA Z FALAFELEM", "DESC": "3x falafel, roszponka, szpinak, świeży ogórek, pomidorki koktajlowe, czerwona papryka, hummus, sezam", "PRICE": "36.00" }
+    },
+    "LIMITED": {
+      "ROLLON": { "TITLE": "FRENCH FRIES ROLL", "DESC": "Sojowe stripsy, frytki, hummus, pomidor, czerwona cebula, ogórek kiszony, sos czosnkowy", "PRICE": "35.50" }
+    },
+    "EXTRAS": {
+      "FALAFEL": { "TITLE": "FALAFEL (1 SZT.)", "DESC": "", "PRICE": "4.00" },
+      "VEGANFETA": { "TITLE": "WEGAŃSKA FETA", "DESC": "", "PRICE": "4.00" },
+      "JALAPENO": { "TITLE": "PAPRYCZKI JALAPENO", "DESC": "", "PRICE": "3.00" },
+      "OLIVES": { "TITLE": "OLIWKI", "DESC": "", "PRICE": "3.00" },
+      "CORN": { "TITLE": "KUKURYDZA", "DESC": "", "PRICE": "3.00" },
+      "SAUCE": { "TITLE": "DODATKOWY SOS", "DESC": "", "PRICE": "3.00" }
+    }
+  }
+}

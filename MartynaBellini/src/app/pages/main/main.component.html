@@ -1,0 +1,82 @@
+<!-- HERO -->
+<section class="hero">
+  <div class="hero-bg-texture"></div>
+  <div class="hero-content">
+    <div class="hero-text">
+      <p class="section-tag">Acoustic Guitarist & Songwriter</p>
+      <h1 class="hero-title">Martyna<br><em>Bellini</em></h1>
+      <p class="hero-sub">Warm, intimate acoustic guitar — songs that feel like the quiet of an autumn forest, honest and alive.</p>
+      <div class="hero-btns">
+        <a href="https://open.spotify.com" target="_blank" class="btn-primary">
+          <i class="fab fa-spotify" style="margin-right:8px"></i>Listen on Spotify
+        </a>
+        <a href="https://youtube.com" target="_blank" class="btn-outline">
+          <i class="fab fa-youtube" style="margin-right:8px"></i>Watch on YouTube
+        </a>
+      </div>
+    </div>
+    <div class="hero-visual">
+      <div class="hero-ring"></div>
+      <div class="hero-guitar">🎸</div>
+    </div>
+  </div>
+  <div class="hero-scroll">
+    <span>Scroll</span>
+    <div class="scroll-line"></div>
+  </div>
+</section>
+
+<!-- FEATURED MUSIC -->
+<section class="music-section">
+  <div class="section-inner">
+    <p class="section-tag">Portfolio</p>
+    <h2 class="section-heading">Featured Music</h2>
+    <div class="tracks-grid">
+      <div class="track-card" *ngFor="let track of tracks">
+        <div class="track-number">{{ track.num }}</div>
+        <div class="track-info">
+          <h3 class="track-title">{{ track.title }}</h3>
+          <p class="track-type">{{ track.type }}</p>
+        </div>
+        <div class="track-links">
+          <a [href]="track.youtube" target="_blank" class="link-yt" title="YouTube">
+            <i class="fab fa-youtube"></i>
+          </a>
+          <a [href]="track.spotify" target="_blank" class="link-sp" title="Spotify">
+            <i class="fab fa-spotify"></i>
+          </a>
+        </div>
+      </div>
+    </div>
+    <div class="music-cta">
+      <a routerLink="music" class="btn-outline">View full portfolio</a>
+    </div>
+  </div>
+</section>
+
+<!-- ABOUT TEASER -->
+<section class="about-teaser">
+  <div class="about-inner">
+    <div class="about-quote">
+      <blockquote>"Every song is a story told through strings — intimate, honest, and alive."</blockquote>
+      <p class="about-mini">Martyna Bellini is a Polish acoustic guitarist and songwriter based in Warsaw, crafting warm, earthy sounds that draw from nature and human experience.</p>
+      <a routerLink="about" class="btn-primary">Read more about Martyna</a>
+    </div>
+    <div class="about-deco">
+      <div class="deco-circle large"></div>
+      <div class="deco-circle small"></div>
+      <div class="deco-note">♩</div>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer class="site-footer">
+  <p class="footer-name">Martyna Bellini</p>
+  <div class="footer-links">
+    <a href="https://open.spotify.com" target="_blank"><i class="fab fa-spotify"></i></a>
+    <a href="https://youtube.com" target="_blank"><i class="fab fa-youtube"></i></a>
+    <a href="https://instagram.com" target="_blank"><i class="fab fa-instagram"></i></a>
+  </div>
+  <p class="footer-copy">© 2026 Martyna Bellini · All rights reserved</p>
+</footer>

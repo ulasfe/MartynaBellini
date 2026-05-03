@@ -1,0 +1,60 @@
+.dashboard-container {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.welcome-card {
+  background: white;
+  padding: 2.5rem;
+  border-radius: 15px;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.2);
+  text-align: center;
+  max-width: 500px;
+  width: 90%;
+}
+
+.icon-circle {
+  width: 80px;
+  height: 80px;
+  background: #f0f2f5;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto 1.5rem;
+  font-size: 2rem;
+  color: #764ba2;
+}
+
+h1 { color: #2d3436; margin-bottom: 1rem; }
+p { color: #636e72; line-height: 1.6; margin-bottom: 2rem; }
+
+.stats-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1rem;
+  margin-bottom: 2rem;
+  background: #f9f9f9;
+  padding: 1rem;
+  border-radius: 10px;
+}
+
+.label { display: block; font-size: 0.8rem; color: #b2bec3; text-transform: uppercase; }
+.value { font-weight: bold; color: #2d3436; }
+.online { color: #00b894; }
+
+.logout-btn {
+  background: #ff7675;
+  color: white;
+  border: none;
+  padding: 0.8rem 2rem;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.logout-btn:hover { background: #d63031; }

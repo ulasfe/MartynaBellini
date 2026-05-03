@@ -1,0 +1,89 @@
+<div class="contact-page">
+  <div class="contact-header">
+    <p class="section-tag">Get in touch</p>
+    <h1>Contact & Booking</h1>
+    <p class="contact-sub">Interested in booking Martyna for a live session, event, or collaboration? Reach out below.</p>
+  </div>
+
+  <div class="contact-body">
+    <div class="contact-info">
+      <h2>Find me online</h2>
+      <div class="platform-cards">
+        <a href="https://open.spotify.com" target="_blank" class="platform-card">
+          <i class="fab fa-spotify sp"></i>
+          <div>
+            <h4>Spotify</h4>
+            <p>Stream all music</p>
+          </div>
+        </a>
+        <a href="https://youtube.com" target="_blank" class="platform-card">
+          <i class="fab fa-youtube yt"></i>
+          <div>
+            <h4>YouTube</h4>
+            <p>Watch videos & live sessions</p>
+          </div>
+        </a>
+        <a href="https://instagram.com" target="_blank" class="platform-card">
+          <i class="fab fa-instagram ig"></i>
+          <div>
+            <h4>Instagram</h4>
+            <p>Behind the scenes & updates</p>
+          </div>
+        </a>
+      </div>
+
+      <div class="contact-details">
+        <div class="detail-row">
+          <span class="detail-label">Email</span>
+          <a href="mailto:martyna@bellini.music" class="detail-value">martyna&#64;bellini.music</a>
+        </div>
+        <div class="detail-row">
+          <span class="detail-label">Based in</span>
+          <span class="detail-value">Warsaw, Poland</span>
+        </div>
+        <div class="detail-row">
+          <span class="detail-label">Available for</span>
+          <span class="detail-value">Live sessions · Collaborations · Bookings</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="contact-form-wrap">
+      <h2>Send a message</h2>
+      <div class="form-group">
+        <label>Your name</label>
+        <input type="text" placeholder="Jane Smith" [(ngModel)]="form.name">
+      </div>
+      <div class="form-group">
+        <label>Email address</label>
+        <input type="email" placeholder="jane@example.com" [(ngModel)]="form.email">
+      </div>
+      <div class="form-group">
+        <label>Subject</label>
+        <select [(ngModel)]="form.subject">
+          <option value="">Select a topic</option>
+          <option>Booking enquiry</option>
+          <option>Collaboration</option>
+          <option>General question</option>
+          <option>Other</option>
+        </select>
+      </div>
+      <div class="form-group">
+        <label>Message</label>
+        <textarea rows="5" placeholder="Tell me about your project or event..." [(ngModel)]="form.message"></textarea>
+      </div>
+      <button class="btn-primary" (click)="submit()" style="width:100%">Send message</button>
+      <p class="form-note" *ngIf="sent">✓ Message sent! I'll get back to you soon.</p>
+    </div>
+  </div>
+</div>
+
+<footer class="site-footer">
+  <p class="footer-name">Martyna Bellini</p>
+  <div class="footer-links">
+    <a href="https://open.spotify.com" target="_blank"><i class="fab fa-spotify"></i></a>
+    <a href="https://youtube.com" target="_blank"><i class="fab fa-youtube"></i></a>
+    <a href="https://instagram.com" target="_blank"><i class="fab fa-instagram"></i></a>
+  </div>
+  <p class="footer-copy">© 2026 Martyna Bellini · All rights reserved</p>
+</footer>

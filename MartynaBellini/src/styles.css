@@ -1,0 +1,79 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --cream: #fdf6ee;
+  --cream-dark: #f5e9d8;
+  --brown-light: #d4b896;
+  --brown-mid: #a0693a;
+  --brown-dark: #6b3d1e;
+  --earth-dark: #3a2c1a;
+  --text-muted: #7a5c3a;
+}
+
+*, *::before, *::after { box-sizing: border-box; }
+
+html, body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  /* NO overflow:hidden — that was hiding the whole page! */
+}
+
+body {
+  font-family: 'Jost', sans-serif;
+  font-weight: 300;
+  background-color: #fdf6ee;
+  color: #3a2c1a;
+}
+
+h1, h2, h3, h4 {
+  font-family: 'Cormorant Garamond', serif;
+}
+
+.section-tag {
+  font-family: 'Jost', sans-serif;
+  font-size: 11px;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  color: #a0693a;
+  margin-bottom: 10px;
+  display: block;
+}
+
+.btn-primary {
+  background: #6b3d1e;
+  color: #fdf6ee;
+  padding: 12px 28px;
+  border-radius: 4px;
+  font-family: 'Jost', sans-serif;
+  font-size: 13px;
+  font-weight: 400;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  border: none;
+  cursor: pointer;
+  text-decoration: none;
+  display: inline-block;
+  transition: background 0.2s;
+}
+.btn-primary:hover { background: #8b4d2a; }
+
+.btn-outline {
+  background: transparent;
+  color: #6b3d1e;
+  padding: 11px 28px;
+  border-radius: 4px;
+  font-family: 'Jost', sans-serif;
+  font-size: 13px;
+  font-weight: 400;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  border: 1px solid #6b3d1e;
+  cursor: pointer;
+  text-decoration: none;
+  display: inline-block;
+  transition: all 0.2s;
+}
+.btn-outline:hover { background: #6b3d1e; color: #fdf6ee; }

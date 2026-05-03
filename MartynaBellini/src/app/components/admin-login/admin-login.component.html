@@ -1,0 +1,47 @@
+<div class="min-h-screen bg-[#F9F8F3] flex items-center justify-center p-4">
+  <div class="max-w-md w-full bg-white rounded-3xl shadow-2xl border-2 border-[#006400] p-8">
+    
+    <div class="text-center mb-8">
+      <h2 class="text-3xl font-black text-[#006400] tracking-tighter uppercase">Admin Panel</h2>
+      <p class="text-sm text-green-800 opacity-60">Please enter your login credentials</p>
+    </div>
+
+    <form (submit)="onLogin(); $event.preventDefault()" class="space-y-6">
+      <div>
+        <label class="block text-xs font-bold uppercase mb-2">Username </label>
+        <input 
+          type="text" 
+          [ngModel]="username()" 
+          (ngModelChange)="username.set($event)"
+          name="username"
+          class="w-full px-4 py-3 rounded-xl border-2 border-gray-100 focus:border-[#006400] outline-none transition-all"
+          placeholder="admin">
+      </div>
+
+      <div>
+        <label class="block text-xs font-bold uppercase mb-2">Password</label>
+        <input 
+          type="password" 
+          [ngModel]="password()" 
+          (ngModelChange)="password.set($event)"
+          name="password"
+          class="w-full px-4 py-3 rounded-xl border-2 border-gray-100 focus:border-[#006400] outline-none transition-all"
+          placeholder="••••••••">
+      </div>
+
+      <p *ngIf="errorMessage()" class="text-red-500 text-xs font-bold italic text-center">
+        {{ errorMessage() }}
+      </p>
+
+      <button 
+        type="submit"
+        class="w-full bg-[#006400] text-white py-4 rounded-xl font-black uppercase tracking-widest hover:bg-green-700 transition-all shadow-lg active:scale-95">
+        Login
+      </button>
+    </form>
+
+    <div class="mt-8 text-center">
+      <a href="/" class="text-xs text-[#006400] font-bold hover:underline">← Turn Back to site</a>
+    </div>
+  </div>
+</div>

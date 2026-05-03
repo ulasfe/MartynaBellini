@@ -1,0 +1,43 @@
+<div class="music-page">
+  <div class="page-header">
+    <p class="section-tag">Discography</p>
+    <h1>Music & Portfolio</h1>
+    <p class="page-sub">Original compositions, covers, and live sessions — all available on YouTube and Spotify.</p>
+  </div>
+
+  <div class="page-body">
+    <div class="filter-row">
+      <button *ngFor="let f of filters" [class.active]="activeFilter === f" (click)="activeFilter = f" class="filter-btn">{{ f }}</button>
+    </div>
+
+    <div class="tracks-list">
+      <div class="track-row" *ngFor="let t of filteredTracks()">
+        <div class="track-num">{{ t.num }}</div>
+        <div class="track-meta">
+          <h3 class="track-name">{{ t.title }}</h3>
+          <p class="track-desc">{{ t.type }} · {{ t.year }}</p>
+        </div>
+        <div class="track-duration">{{ t.duration }}</div>
+        <div class="platform-links">
+          <a [href]="t.youtube" target="_blank" class="platform-btn yt">
+            <i class="fab fa-youtube"></i> YouTube
+          </a>
+          <a [href]="t.spotify" target="_blank" class="platform-btn sp">
+            <i class="fab fa-spotify"></i> Spotify
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- FOOTER -->
+<footer class="site-footer">
+  <p class="footer-name">Martyna Bellini</p>
+  <div class="footer-links">
+    <a href="https://open.spotify.com" target="_blank"><i class="fab fa-spotify"></i></a>
+    <a href="https://youtube.com" target="_blank"><i class="fab fa-youtube"></i></a>
+    <a href="https://instagram.com" target="_blank"><i class="fab fa-instagram"></i></a>
+  </div>
+  <p class="footer-copy">© 2026 Martyna Bellini · All rights reserved</p>
+</footer>
