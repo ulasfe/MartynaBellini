@@ -11,7 +11,8 @@ import { NgFor } from '@angular/common';
 export class MusicComponent {
   filters = ['All', 'Originals', 'Covers', 'Live'];
   activeFilter = 'All';
-
+  youtubeUrl = 'https://www.youtube.com/@martynabellini';
+  spotifyUrl = 'https://open.spotify.com/artist/1aKuIByKfw2VlUh2SUdlQS?si=6kBnFT2USvKIm6skMAS1TQ&nd=1&dlsi=e71eca5d618642ed';
   tracks = [
     { num: '01', title: 'Morning Mist', type: 'Original', year: '2024', duration: '3:42', category: 'Originals', youtube: 'https://youtube.com', spotify: 'https://open.spotify.com' },
     { num: '02', title: 'Autumn Road', type: 'Original · Fingerstyle', year: '2024', duration: '4:15', category: 'Originals', youtube: 'https://youtube.com', spotify: 'https://open.spotify.com' },
