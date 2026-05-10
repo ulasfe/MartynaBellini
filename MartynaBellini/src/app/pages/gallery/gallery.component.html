@@ -1,0 +1,70 @@
+<div class="gallery-page">
+
+  <div class="page-header">
+    <p class="section-tag">Visual journey</p>
+    <h1>Gallery</h1>
+    <p class="page-sub">Moments from live performances, studio sessions, and the nature that inspires the music.</p>
+  </div>
+
+  <div class="page-body">
+
+    <div class="filter-row">
+      <button
+        *ngFor="let f of filters"
+        [class.active]="activeFilter === f"
+        (click)="activeFilter = f"
+        class="filter-btn">
+        {{ f }}
+      </button>
+    </div>
+
+    <div class="photo-grid">
+      <div
+        class="photo-card"
+        *ngFor="let photo of filtered"
+        (click)="openLightbox(photo)">
+        <div class="photo-placeholder">
+         <img [src]="photo.src" [alt]="photo.caption" />
+          <div class="photo-overlay">
+            <span class="overlay-icon">⊕</span>
+         </div>
+
+        </div>
+        <div class="photo-meta">
+          <span class="photo-category">{{ photo.category }}</span>
+          <p class="photo-caption">{{ photo.caption }}</p>
+        </div>
+      </div>
+    </div>
+
+
+  </div>
+</div>
+
+<!-- LIGHTBOX -->
+<div class="lightbox" *ngIf="lightboxOpen" (click)="closeLightbox()">
+  <div class="lightbox-inner" (click)="$event.stopPropagation()">
+    <button class="lb-close" (click)="closeLightbox()">✕</button>
+    <button class="lb-prev" (click)="prev()">‹</button>
+    <div class="lb-photo">
+      <img [src]="currentPhoto.src" [alt]="currentPhoto.caption" />
+    </div>
+    <button class="lb-next" (click)="next()">›</button>
+    <div class="lb-caption">
+      <span class="lb-cat">{{ currentPhoto.category }}</span>
+      <p>{{ currentPhoto.caption }}</p>
+      <p class="lb-counter">{{ lightboxIndex + 1 }} / {{ filtered.length }}</p>
+    </div>
+  </div>
+</div>
+
+<!-- FOOTER -->
+<footer class="site-footer">
+  <p class="footer-name">Martyna Bellini</p>
+  <div class="footer-links">
+    <a href="https://open.spotify.com/artist/1aKuIByKfw2VlUh2SUdlQS?si=6kBnFT2USvKIm6skMAS1TQ" target="_blank"><i class="fab fa-spotify"></i></a>
+    <a href="https://youtube.com/@martynabellini?si=yDIOx0QOqum1GYG3" target="_blank"><i class="fab fa-youtube"></i></a>
+    <a href="https://instagram.com" target="_blank"><i class="fab fa-instagram"></i></a>
+  </div>
+  <p class="footer-copy">© 2026 Martyna Bellini · All rights reserved</p>
+</footer>

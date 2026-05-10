@@ -4,6 +4,7 @@
     <div class="nav-links">
       <a routerLink="" routerLinkActive="active" [routerLinkActiveOptions]="{exact:true}">Home</a>
       <a routerLink="music" routerLinkActive="active">Music</a>
+      <a routerLink="gallery" routerLinkActive="active">Gallery</a>
       <a routerLink="about" routerLinkActive="active">About</a>
       <a routerLink="contact" routerLinkActive="active">Contact</a>
     </div>
@@ -14,6 +15,7 @@
   <div class="mobile-menu" [class.open]="menuOpen">
     <a routerLink="" (click)="menuOpen=false">Home</a>
     <a routerLink="music" (click)="menuOpen=false">Music</a>
+    <a routerLink="gallery" (click)="menuOpen=false">Gallery</a>
     <a routerLink="about" (click)="menuOpen=false">About</a>
     <a routerLink="contact" (click)="menuOpen=false">Contact</a>
   </div>

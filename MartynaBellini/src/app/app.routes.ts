@@ -14,6 +14,10 @@ export const routes: Routes = [
         loadComponent: () => import('./pages/music/music.component').then(m => m.MusicComponent)
       },
       {
+        path: 'gallery',
+        loadComponent: () => import('./pages/gallery/gallery.component').then(m => m.GalleryComponent)
+      },
+      {
         path: 'about',
         loadComponent: () => import('./pages/about/about.component').then(m => m.AboutComponent)
       },
