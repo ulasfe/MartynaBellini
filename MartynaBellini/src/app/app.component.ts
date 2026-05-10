@@ -1,5 +1,6 @@
-import { Component } from '@angular/core';
-import { RouterOutlet } from '@angular/router';
+import { Component,inject } from '@angular/core';
+import { Router,RouterOutlet,NavigationEnd } from '@angular/router';
+
 
 @Component({
   selector: 'app-root',
@@ -7,4 +8,14 @@ import { RouterOutlet } from '@angular/router';
   imports: [RouterOutlet],
   standalone: true
 })
-export class AppComponent {}
+export class AppComponent {
+   private router = inject(Router);
+
+   constructor() {
+    this.router.events.subscribe((event) => {
+      if (event instanceof NavigationEnd) {
+        window.scrollTo(0, 0);
+      }
+    });
+  }
+}

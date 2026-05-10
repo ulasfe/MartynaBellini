@@ -1,11 +1,11 @@
 import { Component } from '@angular/core';
-import { NgFor, NgIf, NgClass } from '@angular/common';
+import { NgFor, NgIf } from '@angular/common';
 
 @Component({
   selector: 'app-gallery',
   templateUrl: './gallery.component.html',
   styleUrls: ['./gallery.component.css'],
-  imports: [NgFor, NgIf, NgClass],
+  imports: [NgFor, NgIf],
   standalone: true
 })
 export class GalleryComponent {
