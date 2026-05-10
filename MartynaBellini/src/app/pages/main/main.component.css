@@ -1,4 +1,9 @@
 /* HERO */
+
+@font-face {
+  font-family: 'MyHandwriting';
+  src: url('/WhisperingSignature.ttf') format('truetype');
+}
 .hero {
   position: relative;
   min-height: calc(100vh - 64px);
@@ -8,11 +13,31 @@
   justify-content: center;
   overflow: hidden;
 }
+
+.hero::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+
+  background-image:  url('/MartynaBellini/public/5done.jpg');
+  background-size: cover;
+  background-position: center;
+
+  opacity: 0.15; /* controls texture visibility */
+  pointer-events: none;
+}
 .hero-bg-texture {
   position: absolute;
   inset: 0;
-  background-image: radial-gradient(circle at 80% 20%, rgba(107,61,30,0.06) 0%, transparent 50%),
-    radial-gradient(circle at 20% 80%, rgba(160,105,58,0.07) 0%, transparent 50%);
+
+  background-image: url('/5done.jpg');
+
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+
+  opacity: 0.82;
+
   pointer-events: none;
 }
 .hero-content {
@@ -24,23 +49,24 @@
   padding: 80px 48px 60px;
   gap: 60px;
   width: 100%;
+  z-index: 2;
 }
 .hero-text { flex: 1; }
 .hero-title {
-  font-family: 'Cormorant Garamond', serif;
+  font-family: 'MyHandwriting', serif;
   font-size: clamp(52px, 8vw, 96px);
   font-weight: 300;
   line-height: 1.0;
-  color: #3a2c1a;
+  color: #dacfa0;
   margin: 12px 0 20px;
 }
 .hero-title em {
   font-style: italic;
-  color: #6b3d1e;
+  color: #f8f8f5;
 }
 .hero-sub {
   font-size: 16px;
-  color: #7a5c3a;
+  color: #f8ddbe;
   line-height: 1.8;
   max-width: 400px;
   margin-bottom: 36px;
@@ -65,7 +91,7 @@
   width: 260px;
   height: 260px;
   border-radius: 50%;
-  border: 1px solid rgba(107,61,30,0.2);
+  border: 1px solid rgba(151, 141, 134, 0.2);
   animation: spin 20s linear infinite;
 }
 @keyframes spin { to { transform: rotate(360deg); } }
@@ -117,7 +143,7 @@
   font-family: 'Cormorant Garamond', serif;
   font-size: 42px;
   font-weight: 400;
-  color: #3a2c1a;
+  color: #5c564b;
   margin-bottom: 40px;
 }
 .tracks-grid {

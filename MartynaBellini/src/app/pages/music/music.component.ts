@@ -14,13 +14,9 @@ export class MusicComponent {
   youtubeUrl = 'https://www.youtube.com/@martynabellini';
   spotifyUrl = 'https://open.spotify.com/artist/1aKuIByKfw2VlUh2SUdlQS?si=6kBnFT2USvKIm6skMAS1TQ&nd=1&dlsi=e71eca5d618642ed';
   tracks = [
-    { num: '01', title: 'Morning Mist', type: 'Original', year: '2024', duration: '3:42', category: 'Originals', youtube: 'https://youtube.com', spotify: 'https://open.spotify.com' },
-    { num: '02', title: 'Autumn Road', type: 'Original · Fingerstyle', year: '2024', duration: '4:15', category: 'Originals', youtube: 'https://youtube.com', spotify: 'https://open.spotify.com' },
-    { num: '03', title: 'Still Waters', type: 'Cover', year: '2023', duration: '3:58', category: 'Covers', youtube: 'https://youtube.com', spotify: 'https://open.spotify.com' },
-    { num: '04', title: 'Golden Hour', type: 'Live Session', year: '2024', duration: '5:02', category: 'Live', youtube: 'https://youtube.com', spotify: 'https://open.spotify.com' },
-    { num: '05', title: 'Forest Floor', type: 'Original', year: '2023', duration: '3:30', category: 'Originals', youtube: 'https://youtube.com', spotify: 'https://open.spotify.com' },
-    { num: '06', title: 'River Song', type: 'Cover', year: '2023', duration: '4:10', category: 'Covers', youtube: 'https://youtube.com', spotify: 'https://open.spotify.com' },
-    { num: '07', title: 'Late November', type: 'Live Session', year: '2023', duration: '6:18', category: 'Live', youtube: 'https://youtube.com', spotify: 'https://open.spotify.com' },
+    { num: '01', title: 'Wroclove', type: 'Original', year: '2020', duration: '3:43', category: 'Originals', youtube: 'https://youtu.be/k4-Nd3mlOqI?si=LHp_e1C4r7Uqlh5h', spotify: 'https://open.spotify.com/track/5P3QUwmufcl1FfpuaecvzL?si=0a13e31869aa44b6' },
+    { num: '02', title: 'Już Nigdy', type: 'Covers', year: '2017', duration: '4:22', category: 'Covers', youtube: 'https://youtu.be/ysdsfnSAYPI?si=xdoCmC6AGztKOC-m',  sportify: 'https://open.spotify.com/track/4J7B4QMStJHyqCiZ8wHObT?si=5ccd9ae2a4bd4860' },
+    { num: '03', title: 'It Aint Me Babe', type: 'Live', year: '2025', duration: '4:38', category: 'Live', youtube: 'https://www.youtube.com/watch?v=TLqncnZU3Mo&t=1397&authuser=0' },
   ];
 
   filteredTracks() {
