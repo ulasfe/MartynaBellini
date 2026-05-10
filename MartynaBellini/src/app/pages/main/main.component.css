@@ -52,6 +52,7 @@
 .hero-text { flex: 1; }
 .hero-title {
   font-family: 'MyHandwriting', serif;
+  text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.3);
   font-size: clamp(52px, 8vw, 96px);
   font-weight: 300;
   line-height: 1.0;
@@ -63,6 +64,7 @@
   color: #f8f8f5;
 }
 .hero-sub {
+  text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.3);
   font-size: 16px;
   color: #f8ddbe;
   line-height: 1.8;
