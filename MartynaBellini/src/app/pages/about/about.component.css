@@ -10,7 +10,7 @@
 }
 .about-hero-text { flex: 1; }
 .about-hero-text h1 {
-  font-family: 'Cormorant Garamond', serif;
+  font-family: '   ', serif;
   font-size: clamp(48px, 7vw, 80px);
   font-weight: 300;
   color: #3a2c1a;
