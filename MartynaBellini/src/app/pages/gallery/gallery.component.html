@@ -47,8 +47,17 @@
     <button class="lb-close" (click)="closeLightbox()">✕</button>
     <button class="lb-prev" (click)="prev()">‹</button>
     <div class="lb-photo">
-      <img [src]="currentPhoto.src" [alt]="currentPhoto.caption" />
-    </div>
+  <div class="lb-spinner" *ngIf="imgLoading">
+    <div class="spinner-ring"></div>
+  </div>
+  <img
+    [src]="currentPhoto.src"
+    [alt]="currentPhoto.caption"
+    [class.hidden]="imgLoading"
+    (load)="imgLoading = false"
+    (error)="imgLoading = false"
+  />
+</div>
     <button class="lb-next" (click)="next()">›</button>
     <div class="lb-caption">
       <span class="lb-cat">{{ currentPhoto.category }}</span>

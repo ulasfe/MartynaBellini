@@ -330,4 +330,5 @@ blockquote {
 }
 @media (max-width: 640px) {
   .gallery-preview { grid-template-columns: repeat(2, 1fr); }
+  .hero-title {  transform: translateY(-20px);}
 }
