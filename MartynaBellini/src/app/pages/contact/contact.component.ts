@@ -26,8 +26,7 @@ export class ContactComponent {
   sent = false;
   error = false;
 
-  submit() {
-    // Ensure the URL matches your server port
+  submit() { 
     this.http.post('/api/send-email', this.form)
       .subscribe({
         next: () => {
