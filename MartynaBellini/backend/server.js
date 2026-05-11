@@ -8,7 +8,7 @@ const app = express();
 app.use(cors());
 app.use(express.json());
 
-const resend = new Resend('re_ZZp3ba5c_GZFDL3JSdceELJkUX7KpAqp7');
+const resend = new Resend('RESEND_API_KEY');
 
 app.post('/send-email', async (req, res) => {
     // Destructuring keys must match the Angular 'form' object exactly
@@ -38,6 +38,12 @@ app.post('/send-email', async (req, res) => {
     }
 });
 
+if (process.env.NODE_ENV !== 'production') {
+    app.listen(3000, () => console.log('Server running on port 3000'));
+
 app.listen(3000, () => {
     console.log('Server running on http://localhost:3000');
 });
+}
+
+module.exports = app;

@@ -28,7 +28,7 @@ export class ContactComponent {
 
   submit() {
     // Ensure the URL matches your server port
-    this.http.post('http://localhost:3000/send-email', this.form)
+    this.http.post('/api/send-email', this.form)
       .subscribe({
         next: () => {
           this.sent = true;

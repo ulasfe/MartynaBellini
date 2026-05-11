@@ -3,6 +3,7 @@
   "outputDirectory": "dist/martyna-bellini/browser",
   "framework": null,
   "rewrites": [
+    { "source": "/api/(.*)", "destination": "/backend/server.js" },
     { "source": "/(.*)", "destination": "/index.html" }
   ]
 }
