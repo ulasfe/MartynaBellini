@@ -8,7 +8,7 @@ const app = express();
 app.use(cors());
 app.use(express.json());
 
-const resend = new Resend('RESEND_API_KEY');
+const resend = new Resend(process.env.RESEND_API_KEY);
 
 app.post('/send-email', async (req, res) => {
     // Destructuring keys must match the Angular 'form' object exactly
