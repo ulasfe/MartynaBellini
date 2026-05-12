@@ -11,6 +11,24 @@ app.use(express.json());
 const resend = new Resend(process.env.RESEND_API_KEY);
 
 app.post('/send-email', async (req, res) => {
+
+    // CORS
+    res.setHeader('Access-Control-Allow-Origin', '*');
+    res.setHeader('Access-Control-Allow-Methods', 'POST, OPTIONS');
+    res.setHeader('Access-Control-Allow-Headers', 'Content-Type');
+
+     // Handle preflight
+    if (req.method === 'OPTIONS') {
+        return res.status(200).end();
+    }
+
+     // Only allow POST
+    if (req.method !== 'POST') {
+        return res.status(405).json({
+            error: 'Method not allowed!'
+        });
+    }
+
     // Destructuring keys must match the Angular 'form' object exactly
     const { name, email, subject, message } = req.body;
 
@@ -39,11 +57,9 @@ app.post('/send-email', async (req, res) => {
 });
 
 if (process.env.NODE_ENV !== 'production') {
-    app.listen(3000, () => console.log('Server running on port 3000'));
-
-app.listen(3000, () => {
-    console.log('Server running on http://localhost:3000');
-});
+    app.listen(3000, () => {
+        console.log('Server running on http://localhost:3000');
+    });
 }
 
 module.exports = app;
